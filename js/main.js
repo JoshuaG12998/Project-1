@@ -45,3 +45,4 @@ $('nav a').click(function(a){
     scrollTop : $('section').eq(menuPlace).offset().top - $('nav').height()
   }, 700);
 });
+

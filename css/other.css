@@ -5,11 +5,15 @@ html {
 
 body {
   font-family:'HelveticaNeue-Light', Roboto;
-
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#121a1d), color-stop(100%,#1abc9c)); 
-background: -webkit-linear-gradient(-45deg,  #121a1d 0%,#1abc9c 100%); 
-
-  color:#FFF;
+  background: #121a1d; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #121a1d 0%, #1abc9c 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#121a1d), color-stop(100%,#1abc9c)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #121a1d 0%,#1abc9c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #121a1d 0%,#1abc9c 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #121a1d 0%,#1abc9c 100%); /* IE10+ */
+background: linear-gradient(135deg,  #121a1d 0%,#1abc9c 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121a1d', endColorstr='#1abc9c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  color:#fff;
 }
 input[id*="nav"] {
   z-index:1;
@@ -23,8 +27,8 @@ input[id*="nav"] {
   cursor:pointer;
 }
 input[id*="nav"]:after {
-  width:200px;
-  height:200px;
+  width:25px;
+  height:25px;
   background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1319/nav-icon-on_2.svg);
   background-repeat:no-repeat;
   background-size:25px;
@@ -51,7 +55,7 @@ navigation {
 navigation a {
   color:#fff;
   text-decoration:none;
-  font-size:14px;
+  font-size:12px;
   margin-right:20px;
   user-select:none;
   position:relative;
@@ -73,7 +77,7 @@ navigation a:after {
   height:2px;
   width:100%;
   position:absolute;
-  background:#FFF;
+  background:#fff;
   top:20px;
   left:50%;
   margin-left:-50%;
@@ -102,82 +106,3 @@ navigation a:hover:after {
     padding:50px 35px;
   }
 }
-
-
-
-
-
-.banner {
-    margin: 20px 40px;    
-    background: #FFFFFF;
-    border: solid 2px #030000;
-    box-shadow: 0 0 8px #FFF;
-    border-radius: 0 0 5px 5px;
-}
-
-.banner h3 {
-    padding: 15px 5px;
-    margin: 10px -20px;
-    border: solid 3px #AAA;
-    position:relative;
-    font-weight: normal;
-    font-size: 20px;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-    text-align: center;
-    border-radius: 3px;
-    
-    background: #efefef;
-    background: linear-gradient(top, #efefef, #dfdfdf);
-    
-}
-
-.banner h3:after, .banner h3:before {
-    content: '';
-    position: absolute;
-    bottom: -7px;
-    background: #555;
-    border:solid 2px #aaa;
-    width: 25px;
-    height: 20px;
-    z-index: -1;
-}
-
-.banner h3:after {
-     left: 2px;
-     transform: rotate(120deg);
-}
-
-.banner h3:before {
-    right: 2px;
-    transform: rotate(60deg);
-}
-
-.banner-content {
-    padding: 10px 18px;
-    margin: 12px;
-    font-size: 18px;
-    font-family: Georgia;
-    border: solid 4px #e3e3e3;
-}
-
-.banner-description {
-  
-}
-
-.banner-thumb {
-    float:right;   
-}
-
-.banner-thumb img {
-    padding-left: 20px;
-    padding-bottom: 20px;   
-}
-
-.banner-footer {
-   clear:both;   
-}
-
-
-
-
-

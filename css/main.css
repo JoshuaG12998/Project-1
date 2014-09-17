@@ -1,7 +1,4 @@
-body {
-    height: 6000px;
-    font-family: Helvetica, Arial;
-}
+
 
 #top-menu {
     position: fixed;
@@ -41,7 +38,7 @@ body {
 
 #foo {
     position: absolute;
-    top: 400px;
+    top: 200px;
 }
 
 #bar {
@@ -52,4 +49,114 @@ body {
 #baz {
     position: absolute;
     top: 1200px;
+}
+
+
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media all and (min-width:45em) {
+  body {
+  background-size: 100%;
+  }
+  section, footer {
+    margin-top: 4%;
+  }
+  #logo {
+    width: 30em;
+  }
+}
+
+body {
+  background: #002d4d; /* Old browsers */
+background: -moz-linear-gradient(top,  #002d4d 0%, #1d0032 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#002d4d), color-stop(100%,#1d0032)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #002d4d 0%,#1d0032 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #002d4d 0%,#1d0032 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #002d4d 0%,#1d0032 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #002d4d 0%,#1d0032 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002d4d', endColorstr='#1d0032',GradientType=0 ); /* IE6-9 */
+
+  
+  padding-top: 7%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+header {
+  color: #fff;
+  background: rgba(0,45,77,0.5);
+  position: fixed;
+  padding: 2% 12.5%;
+  margin-top: -7%;
+  width: 100%;
+}
+
+header ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li {
+  float: left;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.500em 1.500em;
+  border-left: 1px solid #fff;
+}
+
+header ul li:last-child {
+  border-right: 1px solid #fff;
+}
+
+header ul li a:hover {
+  color: #000;
+  background: #fff;
+}
+
+section {
+  background-color: #fff;
+  width: 100%;
+  padding: 2% 12.5%;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.6);
+}
+
+footer {
+  padding: 2% 12.5%;
+  background: #eee;
+}
+
+h1 {
+  font-weight: 100;
+  border-bottom: 1px solid #002d4d;
+  color: #002d4d;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#pic-half-right {
+  float: right;
+  width: 50%;
+  margin-left: 2%;
+}
+
+#logo {
+  margin: 1em auto;
+  border: 1px solid #000;
+  display: block;
 }

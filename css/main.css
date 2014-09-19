@@ -111,3 +111,76 @@ div#mydiv{
     background: #D5E600
     font-size:27px;
 }
+
+
+
+
+.galeria {
+position: relative;
+width: 70%; /* Ancho a ocupar por la galería sobre el total disponible */
+overflow: hidden;
+margin: 10px auto;
+background-color: #000;
+box-shadow: 1px 1px 6px #000;
+}
+.galeria:before {
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background: url(http://sightandnoise.com/img/dod.jpg); /* Fondo por defecto */
+-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;
+opacity: .1;
+}
+.imagen {
+position: relative;
+width: 15%; /* Ancho de la miniatura sobre el ancho total de la galería */
+padding-bottom: 15%; /* Idéntico al anterior para miniaturas cuadradas */
+background-position: 50% 50%;
+-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;
+cursor: pointer;
+}
+.imagen:nth-of-type(1) {
+background-image: url(https://lh4.googleusercontent.com/-3QNEIgX3Gv4/UCPyLTtnmHI/AAAAAAAAEDY/KGb0eEM9GZo/s720/fuerzas-naturaleza.jpg);
+}
+.imagen:nth-of-type(2) {
+background-image: url(https://lh5.googleusercontent.com/-KijskybjlCc/UCPyNCwVxPI/AAAAAAAAEDg/8AwgBhZyhG4/s800/fuerzas-naturaleza2.jpg);
+}
+.imagen:nth-of-type(3) {
+background-image: url(https://lh5.googleusercontent.com/-uGIMoR677PM/UCPyOBjNWVI/AAAAAAAAEDo/XE73W5FQW-c/s800/fuerzas-naturaleza3.jpg);
+}
+.imagen:nth-of-type(4) {
+background-image: url(https://lh5.googleusercontent.com/-nbNq900tVT4/UCPyQeZkP_I/AAAAAAAAEDw/WsBQhD2Da-o/s800/fuerzas-naturaleza4.jpg);
+}
+.imagen:before {
+content: "";
+position: absolute;
+top: -700%; /* ((Nºimágenes*2)-1)*100*/
+left: 100%;
+width: 566%; /* (10000/ancho_imagen)-100 */
+height: 400%; /* Nºimagenes*100 */
+background-image: inherit;
+-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;
+-moz-transition: all .8s ;-webkit-transition: all .8s ;transition: all .8s ;
+}
+.imagen:hover:nth-of-type(1):before {
+top: 0%; /* (Nº.nth-1)*(-100) */
+}
+.imagen:hover:nth-of-type(2):before {
+top: -100%; /* (Nº.nth-1)*(-100) */
+}
+.imagen:hover:nth-of-type(3):before {
+top: -200%; /* (Nº.nth-1)*(-100) */
+}
+.imagen:hover:nth-of-type(4):before {
+top: -300%; /* (Nº.nth-1)*(-100) */
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #c26649), color-stop(100%, #6b220b));
+  background: -webkit-radial-gradient(center, ellipse cover, #c26649 0%, #6b220b 100%);
+  background: -moz-radial-gradient(center, ellipse cover, #c26649 0%, #6b220b 100%);
+  background: radial-gradient(center, ellipse cover, #c26649 0%, #6b220b 100%);
+}

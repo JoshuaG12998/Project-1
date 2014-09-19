@@ -46,3 +46,34 @@ $(window).scroll(function(){
 
 
 
+
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+$(document).ready(function(){
+  var lines = [
+    "Discuss.",
+    "Speak out loud.",
+    "Go ahead.",
+    "Feel free.",
+    "Tell us what you think."
+  ];
+  
+  var text = lines[getRandomInt(0, lines.length)];
+  $('#bigline').text(text);
+});
+
+$('#textarea').click(function(){
+  $('.markdown').addClass('fade');
+});
+
+
+
+var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode: 'gfm',
+        lineNumbers: true,
+        theme: "default"
+ });
+    

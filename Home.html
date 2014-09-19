@@ -17,7 +17,7 @@
   <body>
 
 
-<div id="mydiv">example element</div>
+<div id="mydiv"></div>
 
 <header>
   <ul>
@@ -61,7 +61,35 @@
 </section>
 <section>
   <h1>Reviews</h1>
-  <p>I will add a coment tag</p>
+  <p>
+
+
+<form action="#">
+  <div class='data'>
+    <label for="name">Name</label>
+    <input type="text" name="name" required class="name" placeholder="John Smith" />
+    
+    <label for="email">Email</label>
+ <input type="email" name="email" required class="email" placeholder="johns@gmail.com" />
+    
+    <label for="url">Website</label>
+ <input type="url" name="url" required placeholder="www.example.com" />
+
+  </div>
+
+  <div>
+    <label id='bigline' for="textarea">Tell me how I did!</label>
+    <p class='markdown'>markdown supported.</p>
+    <textarea required cols="40" rows="8" name="textarea" id="textarea"></textarea>
+  </div>
+
+  <div>
+    <input type="submit" value="Submit" />
+  </div>
+</form>  
+
+
+  </p>
 </section>
 <section>
   <h1>Contact</h1>

@@ -2519,7 +2519,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef4657', end
 /* Mobile responsive */
 
 
-@media screen abd (max-width: 460px) {
+@media screen add (max-width: 460px) {
 h1{
     width: 100%;
 }

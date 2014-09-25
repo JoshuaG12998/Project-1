@@ -1,5 +1,11 @@
 article, aside, figure, footer, header, hgroup, menu, nav, section { display: block }
 
+
+
+
+
+
+
 a {
     color: #6d84b4;
     text-decoration: none;
@@ -116,3 +122,406 @@ section {
 
 
 
+* {
+  margin: 0;
+}
+
+/*alt: $grad-size/20 * 1vw;*/
+.background {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: colorChange 20s linear 0s infinite;
+  animation: colorChange 20s linear 0s infinite;
+}
+
+.color {
+  position: relative;
+  float: left;
+  height: 100vh;
+  width: 1px;
+  background-color: #f88;
+}
+
+.stop-0 {
+  left: 0vw;
+  box-shadow: 0 0 500px 500px #ff8888;
+}
+
+.stop-1 {
+  left: 27.77778vw;
+  box-shadow: 0 0 500px 500px #ff9c88;
+}
+
+.stop-2 {
+  left: 55.55556vw;
+  box-shadow: 0 0 500px 500px #ffb088;
+}
+
+.stop-3 {
+  left: 83.33333vw;
+  box-shadow: 0 0 500px 500px #ffc388;
+}
+
+.stop-4 {
+  left: 111.11111vw;
+  box-shadow: 0 0 500px 500px #ffd788;
+}
+
+.stop-5 {
+  left: 138.88889vw;
+  box-shadow: 0 0 500px 500px #ffeb88;
+}
+
+.stop-6 {
+  left: 166.66667vw;
+  box-shadow: 0 0 500px 500px #ffff88;
+}
+
+.stop-7 {
+  left: 194.44444vw;
+  box-shadow: 0 0 500px 500px #ebff88;
+}
+
+.stop-8 {
+  left: 222.22222vw;
+  box-shadow: 0 0 500px 500px #d7ff88;
+}
+
+.stop-9 {
+  left: 250vw;
+  box-shadow: 0 0 500px 500px #c4ff88;
+}
+
+.stop-10 {
+  left: 277.77778vw;
+  box-shadow: 0 0 500px 500px #b0ff88;
+}
+
+.stop-11 {
+  left: 305.55556vw;
+  box-shadow: 0 0 500px 500px #9cff88;
+}
+
+.stop-12 {
+  left: 333.33333vw;
+  box-shadow: 0 0 500px 500px #88ff88;
+}
+
+.stop-13 {
+  left: 361.11111vw;
+  box-shadow: 0 0 500px 500px #88ff9c;
+}
+
+.stop-14 {
+  left: 388.88889vw;
+  box-shadow: 0 0 500px 500px #88ffb0;
+}
+
+.stop-15 {
+  left: 416.66667vw;
+  box-shadow: 0 0 500px 500px #88ffc4;
+}
+
+.stop-16 {
+  left: 444.44444vw;
+  box-shadow: 0 0 500px 500px #88ffd7;
+}
+
+.stop-17 {
+  left: 472.22222vw;
+  box-shadow: 0 0 500px 500px #88ffeb;
+}
+
+.stop-18 {
+  left: 500vw;
+  box-shadow: 0 0 500px 500px #88ffff;
+}
+
+.stop-19 {
+  left: 527.77778vw;
+  box-shadow: 0 0 500px 500px #88ebff;
+}
+
+.stop-20 {
+  left: 555.55556vw;
+  box-shadow: 0 0 500px 500px #88d7ff;
+}
+
+.stop-21 {
+  left: 583.33333vw;
+  box-shadow: 0 0 500px 500px #88c3ff;
+}
+
+.stop-22 {
+  left: 611.11111vw;
+  box-shadow: 0 0 500px 500px #88b0ff;
+}
+
+.stop-23 {
+  left: 638.88889vw;
+  box-shadow: 0 0 500px 500px #889cff;
+}
+
+.stop-24 {
+  left: 666.66667vw;
+  box-shadow: 0 0 500px 500px #8888ff;
+}
+
+.stop-25 {
+  left: 694.44444vw;
+  box-shadow: 0 0 500px 500px #9c88ff;
+}
+
+.stop-26 {
+  left: 722.22222vw;
+  box-shadow: 0 0 500px 500px #b088ff;
+}
+
+.stop-27 {
+  left: 750vw;
+  box-shadow: 0 0 500px 500px #c388ff;
+}
+
+.stop-28 {
+  left: 777.77778vw;
+  box-shadow: 0 0 500px 500px #d788ff;
+}
+
+.stop-29 {
+  left: 805.55556vw;
+  box-shadow: 0 0 500px 500px #eb88ff;
+}
+
+.stop-30 {
+  left: 833.33333vw;
+  box-shadow: 0 0 500px 500px #ff88ff;
+}
+
+.stop-31 {
+  left: 861.11111vw;
+  box-shadow: 0 0 500px 500px #ff88eb;
+}
+
+.stop-32 {
+  left: 888.88889vw;
+  box-shadow: 0 0 500px 500px #ff88d7;
+}
+
+.stop-33 {
+  left: 916.66667vw;
+  box-shadow: 0 0 500px 500px #ff88c4;
+}
+
+.stop-34 {
+  left: 944.44444vw;
+  box-shadow: 0 0 500px 500px #ff88b0;
+}
+
+.stop-35 {
+  left: 972.22222vw;
+  box-shadow: 0 0 500px 500px #ff889c;
+}
+
+.stop-36 {
+  left: 1000vw;
+  box-shadow: 0 0 500px 500px #ff8888;
+}
+
+.stop-37 {
+  left: 1027.77778vw;
+  box-shadow: 0 0 500px 500px #ff9c88;
+}
+
+.stop-38 {
+  left: 1055.55556vw;
+  box-shadow: 0 0 500px 500px #ffb088;
+}
+
+.stop-39 {
+  left: 1083.33333vw;
+  box-shadow: 0 0 500px 500px #ffc388;
+}
+
+.stop-40 {
+  left: 1111.11111vw;
+  box-shadow: 0 0 500px 500px #ffd788;
+}
+
+.stop-41 {
+  left: 1138.88889vw;
+  box-shadow: 0 0 500px 500px #ffeb88;
+}
+
+.stop-42 {
+  left: 1166.66667vw;
+  box-shadow: 0 0 500px 500px #ffff88;
+}
+
+.stop-43 {
+  left: 1194.44444vw;
+  box-shadow: 0 0 500px 500px #ebff88;
+}
+
+.stop-44 {
+  left: 1222.22222vw;
+  box-shadow: 0 0 500px 500px #d7ff88;
+}
+
+.stop-45 {
+  left: 1250vw;
+  box-shadow: 0 0 500px 500px #c4ff88;
+}
+
+.stop-46 {
+  left: 1277.77778vw;
+  box-shadow: 0 0 500px 500px #b0ff88;
+}
+
+.stop-47 {
+  left: 1305.55556vw;
+  box-shadow: 0 0 500px 500px #9cff88;
+}
+
+.stop-48 {
+  left: 1333.33333vw;
+  box-shadow: 0 0 500px 500px #88ff88;
+}
+
+.stop-49 {
+  left: 1361.11111vw;
+  box-shadow: 0 0 500px 500px #88ff9c;
+}
+
+.stop-50 {
+  left: 1388.88889vw;
+  box-shadow: 0 0 500px 500px #88ffb0;
+}
+
+.stop-51 {
+  left: 1416.66667vw;
+  box-shadow: 0 0 500px 500px #88ffc4;
+}
+
+.stop-52 {
+  left: 1444.44444vw;
+  box-shadow: 0 0 500px 500px #88ffd7;
+}
+
+.stop-53 {
+  left: 1472.22222vw;
+  box-shadow: 0 0 500px 500px #88ffeb;
+}
+
+.stop-54 {
+  left: 1500vw;
+  box-shadow: 0 0 500px 500px #88ffff;
+}
+
+.stop-55 {
+  left: 1527.77778vw;
+  box-shadow: 0 0 500px 500px #88ebff;
+}
+
+.stop-56 {
+  left: 1555.55556vw;
+  box-shadow: 0 0 500px 500px #88d7ff;
+}
+
+.stop-57 {
+  left: 1583.33333vw;
+  box-shadow: 0 0 500px 500px #88c3ff;
+}
+
+.stop-58 {
+  left: 1611.11111vw;
+  box-shadow: 0 0 500px 500px #88b0ff;
+}
+
+.stop-59 {
+  left: 1638.88889vw;
+  box-shadow: 0 0 500px 500px #889cff;
+}
+
+.stop-60 {
+  left: 1666.66667vw;
+  box-shadow: 0 0 500px 500px #8888ff;
+}
+
+.stop-61 {
+  left: 1694.44444vw;
+  box-shadow: 0 0 500px 500px #9c88ff;
+}
+
+.stop-62 {
+  left: 1722.22222vw;
+  box-shadow: 0 0 500px 500px #b088ff;
+}
+
+.stop-63 {
+  left: 1750vw;
+  box-shadow: 0 0 500px 500px #c388ff;
+}
+
+.stop-64 {
+  left: 1777.77778vw;
+  box-shadow: 0 0 500px 500px #d788ff;
+}
+
+.stop-65 {
+  left: 1805.55556vw;
+  box-shadow: 0 0 500px 500px #eb88ff;
+}
+
+.stop-66 {
+  left: 1833.33333vw;
+  box-shadow: 0 0 500px 500px #ff88ff;
+}
+
+.stop-67 {
+  left: 1861.11111vw;
+  box-shadow: 0 0 500px 500px #ff88eb;
+}
+
+.stop-68 {
+  left: 1888.88889vw;
+  box-shadow: 0 0 500px 500px #ff88d7;
+}
+
+.stop-69 {
+  left: 1916.66667vw;
+  box-shadow: 0 0 500px 500px #ff88c4;
+}
+
+.stop-70 {
+  left: 1944.44444vw;
+  box-shadow: 0 0 500px 500px #ff88b0;
+}
+
+.stop-71 {
+  left: 1972.22222vw;
+  box-shadow: 0 0 500px 500px #ff889c;
+}
+
+.stop-72 {
+  left: 2000vw;
+  box-shadow: 0 0 500px 500px #ff8888;
+}
+
+@-webkit-keyframes colorChange {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1000%;
+  }
+}
+@keyframes colorChange {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -1000%;
+  }
+}
